@@ -93,7 +93,7 @@ app.post('/login/', async (request, response) => {
 
 // change password api
 
-app.post('/change-password', async (request, response) => {
+app.put('/change-password', async (request, response) => {
   const {username, oldPassword, newPassword} = request.body
 
   const selectUserQuery = `
